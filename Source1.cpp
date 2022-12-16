@@ -35,6 +35,12 @@ void pushX(int num) {
         cout << " ";
 
 }
+void pushX2(int num)
+{
+
+    for (int i = 150; i >= num; i--)
+        cout << " ";
+}
 void q1()
 {
 
@@ -61,10 +67,36 @@ void q1()
 
 }
 
+void q11()
+{
 
+    for (int i = 0; i < 2222; i++) {
+        for (int j = 0; j < 200; j++) {
+            system("CLS");
+
+            pushX2(j); if (j % 2 != 0)  printf("\033[32;5m      *\n \033[m");
+            else printf("\033[31;5m      *\n \033[m");
+            pushX2(j); if (j % 2 != 0) printf("\033[35;5m    ***\n \033[m");
+            else  printf("\033[94;5m    ***\n \033[m");
+            pushX2(j); if (j % 2 != 0) printf("\033[32;5m   *****\n \033[m");
+            else printf("\033[31;5m   *****\n \033[m");
+            pushX2(j); if (j % 2 != 0)printf("\033[35;5m  *******\n \033[m");
+            else printf("\033[94;5m  *******\n \033[m");
+            pushX2(j); if (j % 2 != 0) printf("\033[32;5m *********\n \033[m");
+            else printf("\033[31;5m *********\n \033[m");
+            pushX2(j); if (j % 2 != 0) printf("\033[35;5m    **    \n \033[m");
+            else printf("\033[94;5m    **    \n \033[m");
+        }
+        Sleep(1);
+    }
+
+
+}
 
 int main() {
 
     q1();
+    cin.ignore(1000000000, '\n');//enter key to proceed
+    q11();
     return 0;
 }
