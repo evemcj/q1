@@ -1,7 +1,7 @@
 # q1
 scrolling text attempted
-The code was compiled using latest Visual Studio version C++ desktop developer
-The libraries have been used from there
+The code was compiled using latest **Visual Studio version C++ desktop developer
+The libraries have been used from there**
 
 the libs for download available
 ## iostream
